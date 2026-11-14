@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121521;
+  color: #e6e9f2;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#topo {
+  background-color: #1c2135;
+  border-bottom: 3px solid #ff5e7e;
+  padding: 24px 0;
+}
+
+#topo h1 {
+  font-size: 2rem;
+  color: #ff5e7e;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  color: #a8b2d1;
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+
+.menu-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu-lista a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #272e47;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-lista a:hover {
+  background-color: #ff5e7e;
+  color: #121521;
+}
+
+.menu-lista a.ativo {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 2px;
+}
+
+main {
+  flex: 1;
+  padding: 30px 0;
+}
+
+.card {
+  background-color: #1c2135;
+  border: 1px solid #2d3552;
+  border-radius: 10px;
+  padding: 26px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: #38bdf8;
+  font-size: 1.55rem;
+  margin-bottom: 14px;
+}
+
+h3 {
+  color: #ff8fa3;
+  font-size: 1.2rem;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+main a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #facc15;
+}
+
+.botao-link {
+  display: inline-block;
+  background-color: #ff5e7e;
+  color: #121521 !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.botao-link:hover {
+  background-color: #ff859d;
+}
+
+/* Listas */
+.lista-conteudo,
+.indice-interno {
+  margin-left: 22px;
+  margin-bottom: 16px;
+}
+
+.lista-conteudo li,
+.indice-interno li {
+  margin-bottom: 8px;
+}
+
+.item-jogo {
+  background-color: #232942;
+  padding: 16px;
+  border-left: 4px solid #38bdf8;
+  border-radius: 6px;
+  margin-top: 14px;
+}
+
+.item-jogo h3 {
+  margin-top: 0;
+}
+
+.imagem-destaque {
+  margin: 20px 0;
+  background-color: #151926;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.imagem-destaque img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.imagem-destaque figcaption {
+  font-size: 0.9rem;
+  color: #a8b2d1;
+  margin-top: 8px;
+}
+
+.aviso-demo {
+  background-color: #2a2418;
+  border-left: 4px solid #facc15;
+  color: #fef08a;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-grupo label {
+  font-weight: 600;
+  color: #e6e9f2;
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3c466b;
+  border-radius: 6px;
+  background-color: #121521;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.botao-enviar {
+  align-self: flex-start;
+  background-color: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #7dd3fc;
+}
+
+footer {
+  background-color: #1c2135;
+  border-top: 1px solid #2d3552;
+  padding: 18px 0;
+  text-align: center;
+  color: #a8b2d1;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  #topo h1 {
+    font-size: 1.6rem;
+  }
+
+  .menu-lista {
+    flex-direction: column;
+  }
+
+  .menu-lista a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .botao-enviar {
+    width: 100%;
+  }
+}
